@@ -14,8 +14,8 @@ class ProjectsTest extends TestCase
     public function a_user_can_create_a_project()
     {
       $this->withoutExceptionHandling();
-
-      $this->actingAs(factory('App\User') -> create());
+      $this->signIn();
+      // $this->actingAs(factory('App\User') -> create());
 
       $this->get('/projects/create')->assertStatus(200);
 
