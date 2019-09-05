@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="45">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="47" width="292" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path d="m68.5,73c0,0 -1,0 -2,-1c-1,-1 -2.693436,-2.458801 -4,-3c-0.923878,-0.382683 -2.693436,-1.458801 -4,-2c-0.923878,-0.382683 -1,0 -3,-2c0,0 -1,-1 -1,-1c0,0 1,0 1,0l0,0l1,0" id="svg_2" stroke-width="1.5" stroke="#000" fill="#B8874D"/>
+  <path stroke="#000" id="svg_7" d="m18.690165,36.568928c-9.650863,-8.215834 -13.1014,-13.413042 -13.129345,-19.77529c-0.025548,-5.80004 4.234014,-11.397813 8.648305,-11.36554c2.204236,0.016135 6.932561,2.150815 8.606957,3.885903c0.843603,0.874131 1.243198,0.787981 3.121376,-0.673416c5.11183,-3.977343 10.103531,-4.060848 13.336315,-0.223127c5.166824,6.133624 4.226082,13.458117 -2.704052,21.055583c-3.684544,4.039417 -11.730642,11.205212 -12.581579,11.205212c-0.258858,0 -2.642927,-1.849197 -5.297977,-4.109325l0,0z" stroke-opacity="null" stroke-width="0" fill="#47cdff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="18" id="svg_8" y="28.875051" x="46.374186" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Birdboard</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="-10.12527" x2="214.875571" y1="-10.12527" x1="215.125573" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="33.375087" x2="135.62492" y1="11.624909" x1="135.62492" fill-opacity="null" stroke-opacity="null" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="12" id="svg_16" y="27.375038" x="150.625043" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">feathery reminders</text>
+ </g>
+</svg>
