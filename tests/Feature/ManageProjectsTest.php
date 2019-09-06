@@ -15,7 +15,6 @@ class ProjectsTest extends TestCase
     {
       $this->withoutExceptionHandling();
       $this->signIn();
-      // $this->actingAs(factory('App\User') -> create());
 
       $this->get('/projects/create')->assertStatus(200);
 
@@ -48,7 +47,7 @@ class ProjectsTest extends TestCase
     /** @test */
     public function a_project_requires_a_title()
     {
-      $this->actingAs(factory('App\User') -> create());
+      $this->signIn();
 
       $attributes = factory('App\Project') -> raw(['title' => '']);
 
@@ -59,7 +58,7 @@ class ProjectsTest extends TestCase
     /** @test */
     public function a_project_requires_a_description()
     {
-      $this->actingAs(factory('App\User') -> create());
+      $this->signIn();
 
       $attributes = factory('App\Project') -> raw(['description' => '']);
 
@@ -69,7 +68,6 @@ class ProjectsTest extends TestCase
     /** @test */
     public function guests_cannot_create_projects()
     {
-      //$this->withoutExceptionHandling();
       $attributes = factory('App\Project') -> raw();
 
       $this->post('/projects', $attributes)->assertRedirect('login');
@@ -78,15 +76,12 @@ class ProjectsTest extends TestCase
     /** @test */
     public function a_guest_cannot_view_create_page()
     {
-      // $this->withoutExceptionHandling();
-
       $this->get('projects/create')->assertRedirect('login');
     }
 
     /** @test */
     public function guests_cannot_view_projects()
     {
-      //$this->withoutExceptionHandling();
       $attributes = factory('App\Project') -> raw();
 
       $this->get('/projects', $attributes)->assertRedirect('login');
@@ -95,7 +90,6 @@ class ProjectsTest extends TestCase
     /** @test */
     public function guests_cannot_view_a_single_project()
     {
-      //$this->withoutExceptionHandling();
       $project = factory('App\Project')->create();
 
       $this->get($project->path())->assertRedirect('login');
@@ -104,8 +98,7 @@ class ProjectsTest extends TestCase
     /** @test */
     public function an_authenticated_user_cannot_view_the_projects_of_others()
     {
-      $this->be(factory('App\User')->create());
-      // $this->withoutExceptionHandling();
+      $this->signIn();
 
       $project = factory('App\Project')->create();
 
