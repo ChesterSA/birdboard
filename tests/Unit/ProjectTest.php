@@ -28,6 +28,8 @@ class ProjectTest extends TestCase
     /** @test */
     public function it_can_add_a_task()
     {
+      $this->withoutExceptionHandling();
+
       $project = factory('App\Project')->create();
 
       $task = $project->addTask('Test task');
