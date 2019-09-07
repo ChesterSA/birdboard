@@ -6,7 +6,7 @@
       <a href="/projects">My Projects</a> / {{ $project->title }}
     </p>
 
-    <a href='/projects/create' class="button">New Project</a>
+    <a href="{{ $project->path() . '/edit'}}" class="button">Edit Project</a>
   </div>
 </header>
 
@@ -40,6 +40,7 @@
       </div>
       <div>
         <h2 class="text-gray-600 text-sml font-normal text-base mb-3">General Notes</h2>
+
         <form method="POST" action="{{ $project->path() }}">
           @csrf
           @method('PATCH')
@@ -50,6 +51,8 @@
            name="notes">{{$project->notes}}</textarea>
           <button type="submit" class="button">Save</button>
         </form>
+        @include ('errors')
+        
       </div>
 
     </div>
